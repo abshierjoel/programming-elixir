@@ -4,5 +4,5 @@ Projects and Code Examples while working through `Programming Elixir >= 1.6` by 
 
 #### The Book
 
-- [link](https://pragdave.me/)
-- [link](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
+- [Author's Website](https://pragdave.me/)
+- [Buy the Book](https://pragprog.com/titles/elixir16/programming-elixir-1-6/)
