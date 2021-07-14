@@ -4,7 +4,4 @@ defmodule StringZone do
   defp is_ascii([]), do: true
   defp is_ascii([head | tail]) when head > 32 and head < 127, do: is_ascii(tail)
   defp is_ascii([_head | _tail]), do: false
-
-  # def anagram?(word1, word2) do
-  # end
 end
