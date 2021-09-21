@@ -28,7 +28,9 @@ defmodule Programmingelixir.MixProject do
   defp deps do
     [
       {:remix, "~> 0.0.1", only: :dev},
-      {:httpoison, "~> 1.8"}
+      {:httpoison, "~> 1.8"},
+      {:sweet_xml, "~> 0.7.0"},
+      {:stream_data, "~> 0.5.0"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]

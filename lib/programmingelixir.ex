@@ -1,19 +1,6 @@
 defmodule Programmingelixir do
-  @moduledoc """
-  Documentation for `Programmingelixir`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Programmingelixir.hello()
-      :world
-
-  """
   def hello do
-    "Hello Worlds"
+    :world
   end
 
   def goodbye do
