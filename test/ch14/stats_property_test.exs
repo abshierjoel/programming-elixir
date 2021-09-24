@@ -24,5 +24,15 @@ defmodule StatsPropertyTest do
         )
       end
     end
+
+    property "sum equals average times count (min_length)" do
+      check all(l <- list_of(integer(), min_length: 1)) do
+        assert_in_delta(
+          Stats.sum(l),
+          Stats.count(l) * Stats.average(l),
+          1.0e-6
+        )
+      end
+    end
   end
 end
