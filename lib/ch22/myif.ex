@@ -1,4 +1,4 @@
-defmodule My do
+defmodule MyIf do
   defmacro if(condition, clauses) do
     do_clause = Keyword.get(clauses, :do, nil)
     else_clause = Keyword.get(clauses, :else, nil)
