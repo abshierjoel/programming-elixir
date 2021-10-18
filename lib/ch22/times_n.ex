@@ -1,6 +1,11 @@
 defmodule Times do
   defmacro times_n(n) do
+    fun = String.to_atom("times_#{n}")
+
     quote do
+      def unquote(fun)(x) do
+        x * unquote(n)
+      end
     end
   end
 
@@ -21,10 +26,6 @@ end
 defmodule TimesTest do
   require Times
 
-  def run do
-    Times.times_n(4) |> IO.inspect(label: "4 Times")
-    Times.times_n(5) |> IO.inspect(label: "5 Times")
-  end
+  Times.times_n(4)
+  Times.times_n(5)
 end
-
-IO.puts TimesTest.
